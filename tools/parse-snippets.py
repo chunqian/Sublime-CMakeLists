@@ -38,7 +38,7 @@ def main():
     with open("CMakeVariables.sublime-completions", "w") as fp:
         json.dump(
             {
-                "scope": "variable.other.readwrite.cmake",
+                "scope": "meta.function-call.arguments - variable.other.readwrite.cmake",
                 "completions": varcompletions
             },
             fp,
